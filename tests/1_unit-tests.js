@@ -149,11 +149,11 @@ suite('Unit Tests', function () {
     });
     // #17
     test('#typeOf, #notTypeOf', function () {
-      assert.notTypeOf(myCar, 'object');
+      assert.typeOf(myCar, 'object');
       assert.typeOf(myCar.model, 'string');
-      assert.typeOf(airlinePlane.wings, 'string');
+      assert.notTypeOf(airlinePlane.wings, 'string');
       assert.typeOf(airlinePlane.engines, 'array');
-      assert.notTypeOf(myCar.wheels, 'number');
+      assert.typeOf(myCar.wheels, 'number');
     });
     // #18
     test('#instanceOf, #notInstanceOf', function () {
