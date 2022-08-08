@@ -27,7 +27,7 @@ suite('Functional Tests', function () {
         .get('/hello?name=Isioma')
         .end(function (err, res) {
           assert.equal(res.status, 200);
-          assert.equal(res.text, 'hello xy_z');
+          assert.equal(res.text, 'hello Isioma');
           done();
         });
     });
